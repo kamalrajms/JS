@@ -1,0 +1,27 @@
+java script
+
+//-single line comment
+/*   */ -multi line comment
+
+
+## variables
+
+var- can be re-declared and updated
+let- can't be re-declared but can able updated
+const- can't be re-declared and can't be update
+
+## Data types
+
+Premitive type - string,num,boolean,undefined,null
+reference type - objects,Arrays,functions
+
+##operators
+
+Arithematic =  +    -   *   /   %   **
+Assignement
+comparison-relational,equality,string
+ternary
+logical
+bitwise
+
+
