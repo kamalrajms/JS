@@ -18,10 +18,23 @@ reference type - objects,Arrays,functions
 ##operators
 
 Arithematic =  +    -   *   /   %   **
-Assignement
-comparison-relational,equality,string
-ternary
-logical
+Assignement =  +=  -=  *=   /=  %= **=
+comparison
+    relational= x<5  x>5    x<=5  x>=5
+    equality=   ==  ===
+    string
+ternary =  [condition]?true:false
+logical - AND t,t=t
+            t,f=f
+            f,t=f
+            f,f=f
+        OR t,t=t
+            f,f=f
+            t,f=t
+            f,t=t
+        NOT
+            t=f,
+            f=t
 bitwise
 
 

@@ -55,3 +55,68 @@ console.log(a * b);
 console.log(a / b);
 console.log(a % b);
 console.log(a ** b);
+
+// Assignement operator
+let num = 5;
+num = num + 2;
+console.log(num);
+
+let num2 = 2;
+num2 -= 5;
+console.log(num2);
+
+let num3 = 3;
+num3 *= 2;
+console.log(num3);
+
+let num4 = 4;
+num4 /= 2;
+console.log(num4);
+
+// relational
+
+let rel1 = 5;
+console.log(rel1 <= 5);
+console.log(rel1 >= 7);
+console.log(rel1 <= 8);
+console.log(5 > 6);
+
+// equality operator
+
+let equ1 = 5;
+let equ2 = "5";
+
+let e = true;
+let e2 = 1;
+
+console.log(e === e2);
+console.log(equ1 == equ2);
+console.log(equ1 === equ2);
+
+// ternary operator
+
+let age = 24;
+
+let ageLimit = 18;
+
+let typ = age > ageLimit ? "true" : "false";
+console.log(typ);
+
+// logical operator  && ! ||
+
+let age1 = 20;
+let hasID = true;
+
+if (age >= 18 && hasID) {
+  console.log("you can vote TKV");
+}
+if (age <= 18 || hasID) {
+  console.log("you can't vote TKV");
+}
+
+let isLoggedIn = false;
+if (!isLoggedIn) {
+  console.log("Present");
+} else {
+  console.log("not present");
+}
