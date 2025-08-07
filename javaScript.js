@@ -108,10 +108,10 @@ let age1 = 20;
 let hasID = true;
 
 if (age >= 18 && hasID) {
-  console.log("you can vote TKV");
+  console.log("you can vote TVK");
 }
 if (age <= 18 || hasID) {
-  console.log("you can't vote TKV");
+  console.log("you can't vote TVK");
 }
 
 let isLoggedIn = false;
