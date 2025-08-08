@@ -22,7 +22,7 @@ Assignement =  +=  -=  *=   /=  %= **=
 comparison
     relational= x<5  x>5    x<=5  x>=5
     equality=   ==  ===
-    string
+    string= Concatenation(+)
 ternary =  [condition]?true:false
 logical - AND t,t=t
             t,f=f
@@ -35,6 +35,29 @@ logical - AND t,t=t
         NOT
             t=f,
             f=t
-bitwise
 
+bitwise =[0,1] 1=true  0=flase
+
+        8   4   2   1
+
+    5=  0   1   0   1
+    3=  0   0   1   1
+
+     1  = 0    0   0    1
+
+increment | decrement
+
+conditional statements
+
+    if
+    else
+    else if
+    nested if
+
+looping
+    while loop
+    for loop
+    do while
+    nested while
+    nested for
 
