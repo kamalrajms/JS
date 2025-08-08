@@ -120,3 +120,52 @@ if (!isLoggedIn) {
 } else {
   console.log("not present");
 }
+
+//string Operator
+
+let firstName = "John";
+let lastName = "Smith";
+
+let fullname = firstName + lastName;
+
+console.log(fullname);
+// str & str
+console.log("vijay" + "kumar");
+// str & num
+console.log("vijay" + 69);
+
+// template Literls
+let product = "Lap";
+let amount = 55000;
+console.log("the product costs amount");
+
+console.log(`the ${product} costs ${amount}`);
+
+//bitwise operator
+
+let bit1 = 5;
+
+let bit2 = 3;
+
+console.log(bit1 & bit2);
+console.log(bit1 | bit2);
+console.log(bit1 ^ bit2);
+// left shift
+console.log(bit1 << 1);
+// 0101
+// 1010
+//right shift
+console.log(bit1 >> 1);
+// 0010
+
+//increment
+
+let inc1 = 5;
+let inc2 = ++inc1;
+console.log(inc1);
+console.log(inc2);
+
+let inc3 = 5;
+let inc4 = inc3++;
+console.log(inc3);
+console.log(inc4);
