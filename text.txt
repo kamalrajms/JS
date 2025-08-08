@@ -49,9 +49,15 @@ increment | decrement
 
 conditional statements
 
-    if
-    else
-    else if
+    if(){
+
+    }
+    else if(){
+
+    }
+    else{
+
+    }
     nested if
 
 looping
