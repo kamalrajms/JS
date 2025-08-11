@@ -93,4 +93,12 @@ looping
             //code
         }
     function Expression
+
+        const functionName=fun(a,b)=>{
+            //code
+        }
+
     Arrow Function
+        const functionName =(Arguments)=>{
+            //code
+        }

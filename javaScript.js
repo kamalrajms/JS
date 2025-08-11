@@ -1,46 +1,30 @@
-for (let i = 1; i <= 5; i++) {
-  console.log(i);
+function name(name = "Person") {
+  console.log(`hello, welcome to ${name} JS`);
+}
+name("kamal");
+name("vijay");
+name("SK");
+name();
+
+function add(a, b) {
+  return a + b;
 }
 
-let sum = 0;
-for (let a = 1; a <= 5; a++) {
-  // for(){
+let sum = add(5, 6);
+console.log(sum);
 
-  // }
-  sum += a;
-  // sum=sum+a
-  console.log("sum", sum);
-}
+// function Expression
 
-let b = 1;
-while (b <= 10) {
-  // while(){
+const multiply = function (a, b) {
+  return a * b;
+};
+console.log(multiply(4, 5));
 
-  // }
-  console.log(b);
-  b++;
-}
+//arrow function
 
-let c = 1;
-do {
-  console.log(c);
-  c++;
-} while (c <= 0);
+const square = (num) => {
+  return num * num;
+};
+console.log(square(4));
 
-// Break
 
-for (let i = 1; i <= 10; i++) {
-  if (i === 5) {
-    break;
-  }
-  console.log(i);
-}
-
-//continue
-
-for (let i = 1; i <= 5; i++) {
-  if (i == 3) {
-    continue;
-  }
-  console.log(i);
-}
