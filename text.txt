@@ -62,8 +62,35 @@ conditional statements
 
 looping
     while loop
+
+        while(condition){
+
+        }
+
     for loop
+
+        for (initialization value,final value,update){
+
+        }
+
     do while
+
+        do{
+            //code
+        }while(condition)
+
     nested while
     nested for
 
+## break,continue
+
+    break:stop the loop immediately
+
+## funcction
+    function Declaration
+
+        function name(){
+            //code
+        }
+    function Expression
+    Arrow Function
