@@ -1,30 +1,14 @@
-function name(name = "Person") {
-  console.log(`hello, welcome to ${name} JS`);
+function isPrime(num) {
+  if (num <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
-name("kamal");
-name("vijay");
-name("SK");
-name();
-
-function add(a, b) {
-  return a + b;
-}
-
-let sum = add(5, 6);
-console.log(sum);
-
-// function Expression
-
-const multiply = function (a, b) {
-  return a * b;
-};
-console.log(multiply(4, 5));
-
-//arrow function
-
-const square = (num) => {
-  return num * num;
-};
-console.log(square(4));
-
-
+console.log(isPrime(7));
+console.log(isPrime(10));
+console.log(isPrime(1));
