@@ -103,3 +103,22 @@ looping
             //code
         }
 
+## Arrays [] - it's a special variable that can store multiple values and it can be any type of data.
+
+    push,pop,shift,unshift,slice,splice,indexof,includes,reverse,sort
+
+
+## for =>map,reduce,find,filter,findindex,fill,some,every
+
+    time intervals
+        set timeinterval
+        set outtime
+    
+    syn fun/asyn fun
+    await metho
+
+##### DMO
+
+
+
+
