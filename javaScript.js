@@ -1,56 +1,36 @@
-let fruits = ["apple", "banana", "Mango"];
-let arr = new Array("a", "b", "c", 4, 5, 67, 89);
-console.log(fruits);
-console.log(fruits[0]);
-console.log(fruits[2]);
-console.log(arr);
-console.log(arr.length);
-console.log(arr.length - 1);
+let num = [1, 2, 3, 4, 5, 6, 5, 5];
 
-let animal = ["Dog", "Cat", "Rabbit"];
-for (let i = 0; i < animal.length; i++) {
-  console.log(animal[i]);
-}
+// variableName.map( code )
+let double = num.map((a) => a * 2);
+console.log(double);
 
-// for of
+// filter
+let even = num.filter((a) => a % 2 === 0);
+console.log(even);
 
-for (let n of animal) {
-  console.log(n);
-}
+//find
+let first = num.find((a) => a == 5);
+console.log(first);
 
-// for Each
-animal.forEach(function (i) {
-  console.log(i);
-});
+//find index
+let index = num.findIndex((a) => a % 2 == 0);
+console.log(index);
 
-//for =>map,reduce,find,filter
+//fill
+// arrayName.fill(valu, index, index + 1);
+let fill = num.fill(8, 1, 5);
+console.log(fill);
 
-let person = ["chandru m", "chandru v", "keerthi"];
-person.push("kamal");
-console.log(person);
+//some
 
-let newPerson = person.pop();
-console.log(newPerson);
-console.log(person);
+let some = num.some((a) => a === 5);
+console.log(some);
 
-console.log(person.shift());
-console.log(person.unshift("vijay"));
-console.log(person);
+//every
+let num1 = [3, 6, 12, 0];
+let allvalue = num1.every((a) => a === 0);
+console.log(allvalue);
 
-let number = ["Apple", "Banana", "Orange", "Grapes", "Vijay"];
-let x = number.slice(1, 3);
-console.log(x);
-console.log(number);
-
-// splice(start,deletecount,"","")    splice(2,1,"sk")
-
-number.splice(1, 0, "Kiwi", "Mango");
-console.log(number);
-
-console.log(number.indexOf("vijay"));
-
-console.log(number.includes("vijay"));
-
-console.log(number.reverse());
-
-console.log(number.sort());
+//reduce
+let red = num.reduce((e) => e % 2 === 0);
+console.log(red);
