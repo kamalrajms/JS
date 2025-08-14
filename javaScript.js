@@ -1,20 +1,68 @@
-//setTimeout(callback,dely)
+//object
+let person = {
+  name: "Chandru",
+  age: 22,
+  isStudent: true,
+};
+console.log(person);
 
-console.log("start");
+//new object
 
-setTimeout(() => {
-  console.log("hi hello");
-}, 2000);
-console.log("stop");
+let person1 = new Object();
 
-//setInterval(callback,delay)
+person1.name = "vijay";
+person1.age = 45;
 
-let count = 0;
-let intervalId = setInterval(() => {
-  count++;
-  console.log(`count ${count}`);
-  if (count <= 5) {
-    console.log("world");
-    clearInterval(intervalId);
-  }
-}, 1000);
+console.log(person1);
+
+//constructor function
+
+function student(name, age) {
+  this.name = name;
+  this.age = age;
+}
+let s1 = new student("John", 20);
+console.log(s1);
+
+//accessing an object
+
+let car = { brand: "toyoto", color: "red" };
+console.log(car.color);
+console.log(car["brand"]);
+//updating an values
+car.color = "Black";
+console.log(car);
+//delete
+delete car.color;
+console.log(car);
+
+//methods in objects
+let calculator = {
+  add: function (a, b) {
+    return a + b;
+  },
+};
+let x = calculator.add(5, 7);
+console.log(x);
+
+let std = {
+  name: "chandru M",
+  grade: "A",
+};
+
+for (let key in std) {
+  console.log(key + ":" + std[key]);
+}
+
+//nexted object
+
+let user = {
+  name: "AK",
+  address: {
+    city: "chennai",
+    pincode: 636006,
+  },
+};
+
+console.log(user.name);
+console.log(user.address.city);

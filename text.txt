@@ -111,12 +111,17 @@ looping
 ## for =>map,reduce,find,filter,findindex,fill,some,every
 
     time intervals
-
+    
         settimeout
+
         setouttime
     
     syn fun/asyn fun
     await metho
+
+# objects {}
+
+    object is collection of Keys & values
 
 ##### DMO
 
