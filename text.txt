@@ -125,6 +125,33 @@ looping
 
 ##### DMO
 
+    Document object module
+
+    it intracts with html file
 
 
+DOM tree structure
 
+    Document
+        html
+            head
+                title
+                    "my page"
+            body
+                h1
+                  "content
+                p
+                div
+
+
+#node types in DOM
+        element node, text nod, attributes node
+
+
+## selectors
+
+    ID selectors
+    Class selectors
+    Tag selectors
+    Query selectors
+    all query  selectors
