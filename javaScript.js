@@ -1,31 +1,41 @@
-document.getElementById("hello").textContent = "hello Js";
+//inner HTML
 
-// ID
-let heading = document.getElementById("java");
+const box = document.getElementById("box");
+console.log(box.innerHTML);
 
-heading.style.color = "red";
+box.innerHTML = "<i>changed</i>";
 
-//class
-let name = document.getElementsByClassName("name");
+//inner text
+const box1 = document.getElementById("box1");
+console.log(box1.innerText);
 
-for (let e of name) {
-  e.style.color = "yellow";
-}
+box1.innerText = "inner text";
 
-//tag
+//textContent
+const box3 = document.getElementById("box3");
+console.log(box3.textContent);
 
-const tag = document.getElementsByTagName("h1");
+//getAttribute()
 
-console.log(tag.length);
+const link = document.getElementById("link");
+console.log(link.getAttribute("src"));
+//setAttribute()
 
-//query selector
+link.setAttribute("src", "./csk.jpg");
+link.setAttribute("alt", "IMage");
 
-const query = document.querySelector(".text");
-query.style.backgroundColor = "red";
+//remove Attributes
+const input = document.getElementById("input");
+input.removeAttribute("placeholder");
 
-//queryselectorall
+//changing form values
+const nameInput = document.getElementById("inputname");
+console.log(nameInput.value);
+nameInput.value = "Chandru";
 
-const allelements = document.querySelectorAll(".textcontent");
-allelements.forEach((e) => {
-  e.style.color = "blue";
-});
+//changing styles
+
+const style = document.getElementById("stylcontent");
+style.style.color = "gold";
+style.style.fontSize = "30px";
+style.style.padding = "200px";
