@@ -1,25 +1,21 @@
-// classname
+//parent nodes
+const child = document.getElementById("child");
 
-const para = document.getElementById("text");
-console.log(para.className);
+console.log(child.parentNode.id);
+console.log(child.parentElement.id);
 
-para.className = "new-highlight";
-console.log(para.className);
+//child nodes
 
-//classList
+const list = document.getElementById("list");
+console.log(list.childNodes);
+console.log(list.children);
 
-const text = document.getElementById("textcontent");
+//firstchild & firstelementchild
 
-text.classList.add("bold");
-text.classList.remove("java");
-console.log(text.classList.contains("bold"));
+const box = document.getElementById("box");
 
-//multi line styleing
-let msg = document.getElementById("msg");
-msg.style.color = "red";
-msg.style.fontSize = "20px";
+console.log(box.firstChild);
+console.log(box.firstElementChild);
+console.log(box.lastChild);
+console.log(box.lastElementChild);
 
-//single linne
-
-let day = document.getElementById("day");
-day.style.cssText = "color:green;font-size:25px;padding:50px";
