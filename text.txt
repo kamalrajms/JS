@@ -157,3 +157,21 @@ DOM tree structure
     all query  selectors
 
 ## reading & changing content
+
+## classname  
+
+## classList
+
+    .add("classname)
+
+        para.classList.add("classname1","classname2"....)
+    
+    .remove("classname)
+
+         para.classList.remove("classname1","classname2"....)
+
+    .contains("classname")
+         console.log( para.classList.contains("classname1"))
+
+
+

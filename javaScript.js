@@ -1,41 +1,17 @@
-//inner HTML
+// classname
 
-const box = document.getElementById("box");
-console.log(box.innerHTML);
+const para = document.getElementById("text");
+console.log(para.className);
 
-box.innerHTML = "<i>changed</i>";
+para.className = "new-highlight";
+console.log(para.className);
 
-//inner text
-const box1 = document.getElementById("box1");
-console.log(box1.innerText);
+//classList
 
-box1.innerText = "inner text";
+const text = document.getElementById("textcontent");
 
-//textContent
-const box3 = document.getElementById("box3");
-console.log(box3.textContent);
+text.classList.add("bold");
+text.classList.remove("java");
+console.log(text.classList.contains("bold"));
 
-//getAttribute()
 
-const link = document.getElementById("link");
-console.log(link.getAttribute("src"));
-//setAttribute()
-
-link.setAttribute("src", "./csk.jpg");
-link.setAttribute("alt", "IMage");
-
-//remove Attributes
-const input = document.getElementById("input");
-input.removeAttribute("placeholder");
-
-//changing form values
-const nameInput = document.getElementById("inputname");
-console.log(nameInput.value);
-nameInput.value = "Chandru";
-
-//changing styles
-
-const style = document.getElementById("stylcontent");
-style.style.color = "gold";
-style.style.fontSize = "30px";
-style.style.padding = "200px";
