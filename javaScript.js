@@ -1,25 +1,21 @@
-//form event
-const form = document.getElementById("form");
+//   required field with condition
+
+const form = document.getElementById("signupform");
+const error = document.getElementById("error");
 
 form.addEventListener("submit", (e) => {
-  //to prevent reload
   e.preventDefault();
-  console.log("form submitted !");
-});
-const input = document.getElementById("name");
-input.addEventListener("input", (e) => {
-  console.log("typing:", e.target.value);
-});
+  const email = document.getElementById("email").value;
+  const age = document.getElementById("age").value;
 
-//  Reading form values
-
-const loginform = document.getElementById("loginForm");
-
-loginform.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
-
-  console.log("username", username);
-  console.log("password", password);
+  if (email === "" || age === "") {
+    error.textContent = "All field required";
+  } else if (!email.includes("@")) {
+    error.textContent = "enter valid mail";
+  } else if (age < 18) {
+    error.textContent = "you are not enegible";
+  } else {
+    error.textContent = "";
+    alert("form submitted");
+  }
 });
