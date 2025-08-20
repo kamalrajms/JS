@@ -1,31 +1,24 @@
-const display = document.getElementById("display");
-const buttons = document.querySelectorAll(".btn");
-const clear = document.getElementById("clear");
-const equal = document.getElementById("equal");
+const apiUrl = "https://jsonplaceholder.typicode.com/users";
 
-//hand btns click
-
-buttons.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    const value = e.target.value;
-    if (value !== undefined) {
-      display.value += value;
-    }
-  });
-});
-
-//hand clear input
-
-clear.addEventListener("click", () => {
-  display.value = "";
-});
-
-//handle equal(=)
-
-equal.addEventListener("click", () => {
+async function fetchUsers() {
   try {
-    display.value = eval(display.value);
+    const response = await fetch(apiUrl);
+    // if (!response.ok) {
+    //   throw new Error(`HTTP error ! Status:${response.status}`);
+    // }
+    const data = await response.json();
+    console.log("users :", data);
+
+    // show name
+    const userlist = document.getElementById("users");
+    data.forEach((user) => {
+      const li = document.createElement("li");
+
+      li.textContent = `${user.email}`;
+      userlist.appendChild(li);
+    });
   } catch (error) {
-    display.value = "Error";
+    console.log("error", error);
   }
-});
+}
+fetchUsers();
