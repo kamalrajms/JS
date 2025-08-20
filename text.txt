@@ -174,4 +174,13 @@ DOM tree structure
          console.log( para.classList.contains("classname1"))
 
 
+## event handelers
 
+syntax
+
+        elementname.addEventListerner("eventType",callbackFuction,useCapture)
+
+        elementname.removeEventListerner("eventType",callback)
+
+        event types=
+                    click,doubleclick,mouseover,mouseout,mouseDown,mouseup,load,scroll
