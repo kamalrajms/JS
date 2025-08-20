@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form id="signupform">
-      <input type="text" id="email" placeholder="email" />
-      <input type="number" id="age" placeholder="enter age" />
-      <button type="submit">submit</button>
-      <p id="error" style="color: red"></p>
-    </form>
+    <label> Choose Numbes</label>
+
+    <select id="number">
+      <option value="">Select option</option>
+      <option value="one">one</option>
+      <option value="two">two</option>
+      <option value="other">other</option>
+    </select>
+
+    <div id="otherfield" style="display: none">
+      <input type="text" placeholder="pleas specify" />
+    </div>
   </body>
 
   <!-- <script>
