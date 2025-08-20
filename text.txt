@@ -184,3 +184,8 @@ syntax
 
         event types=
                     click,doubleclick,mouseover,mouseout,mouseDown,mouseup,load,scroll
+        form event
+                submit,change,input,blur,focus
+
+## form and user input in js
+    Reading form values

@@ -1,23 +1,25 @@
-//eventlisterners 
-const btn = document.getElementById("btn");
-const btn2 = document.getElementById("btn2");
+//form event
+const form = document.getElementById("form");
 
-function sayhello() {
-  alert("hello everyone");
-}
-
-btn.addEventListener("dblclick", sayhello);
-
-setTimeout(() => {
-  btn.removeEventListener("click", sayhello);
-  btn.style.display = "none";
-}, 5000);
-
-btn2.addEventListener("mouseover", () => {
-  console.log("mouse over!");
+form.addEventListener("submit", (e) => {
+  //to prevent reload
+  e.preventDefault();
+  console.log("form submitted !");
 });
-btn2.addEventListener("mouseout", () => {
-  console.log("mouse out!");
+const input = document.getElementById("name");
+input.addEventListener("input", (e) => {
+  console.log("typing:", e.target.value);
 });
 
+//  Reading form values
 
+const loginform = document.getElementById("loginForm");
+
+loginform.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  console.log("username", username);
+  console.log("password", password);
+});
